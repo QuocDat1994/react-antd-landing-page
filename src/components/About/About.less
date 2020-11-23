@@ -9,21 +9,18 @@
 
     &:hover {
       border: 1px solid @primary-color;
-      box-shadow: 0 0 25px 0 rgba(0,0,0,0.2)
+      box-shadow: @card-shadow;
     }
 
     i {
-      padding: 1.5rem;
-      border-radius: 100%;
-      font-size: 2.5rem;
-      color: @primary-color;
-      background-color: lighten(@primary-color, 35%);
+      &:extend(.icon);
+      display: inline-flex;
     }
 
     h2 {
-      margin: 1rem auto;
       font-family: @primary-font;
       font-weight: bold;
+      margin: 1rem auto;
     }
 
     p {
