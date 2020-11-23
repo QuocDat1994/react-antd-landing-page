@@ -2,15 +2,7 @@
 
 .About {
   .ant-card {
-    padding: 2rem 0.5rem;
-    text-align: center;
-    border: 1px solid lighten(black, 80%);
-    transition: 0.5s all ease-in-out;
-
-    &:hover {
-      border: 1px solid @primary-color;
-      box-shadow: @card-shadow;
-    }
+    &:extend(.card);
 
     i {
       &:extend(.icon);

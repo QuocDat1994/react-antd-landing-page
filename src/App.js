@@ -5,6 +5,8 @@ import { Home } from './components/Home/Home';
 import { About } from './components/About/About';
 import { Services } from './components/Services/Services';
 import { Showcase } from './components/Showcase/Showcase';
+import { Pricing } from './components/Pricing/Pricing';
+import { Testimonial } from './components/Testimonial/Testimonial';
 
 import './App.less';
 
@@ -17,6 +19,8 @@ function App() {
         <About />
         <Services />
         <Showcase />
+        <Pricing />
+        <Testimonial />
       </Content>
       <Footer>Fotter</Footer>
     </Layout>

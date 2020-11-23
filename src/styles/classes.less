@@ -68,9 +68,21 @@
   color: @primary-color;
 }
 
+.card {
+  padding: 2rem 0.5rem;
+  text-align: center;
+  border: 1px solid lighten(black, 80%);
+  transition: 0.5s all ease-in-out;
+
+  &:hover {
+    border: 1px solid @primary-color;
+    box-shadow: @card-shadow;
+  }
+}
+
 .container {
   width: 100%;
-  padding: 8rem 15px;
+  padding: 7rem 15px;
   margin-right: auto;
   margin-left: auto;
 }
