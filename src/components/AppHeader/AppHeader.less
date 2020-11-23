@@ -1,35 +1,45 @@
 @import "../../styles/variables";
+@import "../../styles/classes.less";
 
 .AppHeader {
+  padding: 0 !important;
   height: @header-size !important;
+  background: @gradient-bg !important;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  background: @gradient-bg !important;
 
-  .brand {
-    position: relative;
-    img {
-      height: 50%;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 0 0 15px !important;
+
+    .logo {
+      img {
+        height: 60px;
+      }
     }
-  }
 
-  .ant-menu {
-    color: white;
-    font-family: @primary-font;
-    font-size: medium;
-    font-weight: 500;
-
-    margin-left: auto;
-    background: transparent;
-    border-bottom: none;
-    line-height: 45px !important;
-
-    .ant-menu-item-active,
-    .ant-menu-item:hover,
-    .ant-menu-item-selected  {
+    .ant-menu {
+      width: 780px;
+      margin-left: auto;
       color: white !important;
-      border-bottom: 2px solid white !important;
+      font-family: @primary-font;
+      font-size: medium !important;
+      font-weight: bold;
+    
+      background: transparent !important;
+      border-bottom: none !important;
+      line-height: 45px !important;
+    
+      .fa-bars {
+        font-size: 1.5rem;
+        transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    
+        &:hover {
+          color: @primary-color !important;
+        }
+      }
     }
   }
 }
