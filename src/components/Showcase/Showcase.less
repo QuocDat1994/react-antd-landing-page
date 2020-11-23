@@ -24,13 +24,11 @@
     }
   }
 
-  .test {
+  .slider {
     position: relative;
-    // top: -7rem;
-    overflow: auto;
-    z-index: 2;
     margin: -8rem 2rem 8rem 2rem;
-
+    overflow: auto;
+    
     &::-webkit-scrollbar {
       height: 0.8rem;
     }
@@ -38,57 +36,56 @@
     &::-webkit-scrollbar-thumb {
       background-color: fade(#536cfc, 90%);
     }
-  }
 
-  .ant-row {
-    width: 155vw;
+    .ant-row {
+      width: 1900px;
 
-    figure {
-      position: relative;
-      color: white;
-      cursor: pointer;
+      figure {
+        position: relative;
+        color: white;
+        cursor: pointer;
 
-      &:hover {
+        &:hover {
+          figcaption {
+            opacity: 1;
+          }
+        }
+
+        img {
+          width: 250px;
+        }
+
         figcaption {
-          opacity: 1;
-        }
-      }
+          &:extend(.flex-center);
+          flex-direction: column;
+          opacity: 0;
 
-      img {
-        width: 250px;
-      }
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          width: calc(100% - 2rem);
+          height: calc(100% - 2rem);
+          background-color: fade(@primary-color, 80%);
+          transition: 0.5s all ease-in-out;
 
-      figcaption {
-        &:extend(.flex-center);
-        flex-direction: column;
-        opacity: 0;
+          h2 {
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+          }
 
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        width: calc(100% - 2rem);
-        height: calc(100% - 2rem);
-        background-color: fade(@primary-color, 80%);
-        transition: 0.5s all ease-in-out;
+          i {
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
 
-        h2 {
-          color: white;
-          font-weight: bold;
-          font-size: 1.5rem;
-        }
-
-        i {
-          color: white;
-          font-size: 1.2rem;
-          cursor: pointer;
-          transition: 0.3s all ease-in-out;
-
-          &:hover {
-            color: @font-color;
+            &:hover {
+              color: @font-color;
+            }
           }
         }
       }
     }
   }
-
 }

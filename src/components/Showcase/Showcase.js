@@ -51,20 +51,20 @@ export const Showcase = () => {
           sed do eiusmod tempor incididunt ut labore et dolore.
         </p>
       </div>
-      <div className="test">
+      <div className="slider">
         <Row gutter={16}>
           {projectList.map(project => (
-            <Col>
+            <Col key={project.alt}>
               <figure>
-                <img src={project.img} alt={project.img} />
+                <img src={project.img} alt={project.alt} />
                 <figcaption>
                   <h2>{project.name}</h2>
                   <Space size="large">
                     <a href="#showcase">
-                      <i class="fas fa-search"></i>
+                      <i className="fas fa-search"></i>
                     </a>
                     <a href="#showcase">
-                      <i class="fas fa-link"></i>
+                      <i className="fas fa-link"></i>
                     </a>
                   </Space>
                 </figcaption>
