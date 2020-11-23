@@ -9,11 +9,11 @@ export const Home = () => {
         <Row>
           <Col xs={24} md={12}>
             <h1 className="heading">Handcrafted Web Template For Business and Startups</h1>
-            <p className="text">
+            <p className="sub-heading">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
               dolores ea fugiat nesciunt quisquam.
             </p>
-            <Space >
+            <Space size={"large"}>
               <Button type="primary" className="button">
                 <a href="#local">
                   Download

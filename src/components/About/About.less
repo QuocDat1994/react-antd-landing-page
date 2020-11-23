@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+@import "../../styles/classes.less";
+
+.About {
+  .ant-card {
+    padding: 2rem 0.5rem;
+    text-align: center;
+    border: 1px solid lighten(black, 80%);
+    transition: 0.5s all ease-in-out;
+
+    &:hover {
+      border: 1px solid @primary-color;
+      box-shadow: 0 0 25px 0 rgba(0,0,0,0.2)
+    }
+
+    i {
+      padding: 1.5rem;
+      border-radius: 100%;
+      font-size: 2.5rem;
+      color: @primary-color;
+      background-color: lighten(@primary-color, 35%);
+    }
+
+    h2 {
+      margin: 1rem auto;
+      font-family: @primary-font;
+      font-weight: bold;
+    }
+
+    p {
+     &:extend(.text);
+    }
+  }
+
+  .container:nth-child(2) {
+    padding-top: 0;
+  }
+
+  .img-about {
+    width: 100%;
+  }
+}

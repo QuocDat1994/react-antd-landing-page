@@ -26,14 +26,14 @@ export const AppHeader = () => {
             forceSubMenuRender={true}
             overflowedIndicator={<i className="fas fa-bars"></i>}
           >
-            <Item key="home">Home</Item>
-            <Item key="about">About</Item>
-            <Item key="services">Services</Item>
-            <Item key="showcase">Showcase</Item>
-            <Item key="pricing">Pricing</Item>
-            <Item key="team">Team</Item>
-            <Item key="blog">Blog</Item>
-            <Item key="contact">Contact</Item>
+            <Item key="home"><a href="#home">Home</a></Item>
+            <Item key="about"><a href="#about">About</a></Item>
+            <Item key="services"><a href="#services">Services</a></Item>
+            <Item key="showcase"><a href="#Showcase">Showcase</a></Item>
+            <Item key="pricing"><a href="#pricing">Pricing</a></Item>
+            <Item key="team"><a href="#team">Team</a></Item>
+            <Item key="blog"><a href="#blog">Blog</a></Item>
+            <Item key="contact"><a href="#contact">Contact</a></Item>
           </Menu>
         </div>
       </Header>

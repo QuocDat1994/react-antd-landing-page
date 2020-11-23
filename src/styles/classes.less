@@ -7,23 +7,38 @@
   margin-bottom: 1.5rem;
 }
 
-.text {
+.sub-heading {
+  font-family: @primary-font;
   font-size: 1rem;
+}
+
+.text {
+  font-family: @primary-font;
+  font-size: 1rem;
+  color: @font-color;
 }
 
 .button {
   height: auto !important;
-  padding: 0.5rem 1rem !important;
+  padding: 1rem 2rem !important;
   border-radius: 4px !important;
 
   font-family: @primary-font;
   font-weight: bold !important;
   text-transform: uppercase;
+
+  box-shadow: 0 8px 9px 0 rgba(96,94,94,.17) !important;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   width: 100%;
-  padding: 2rem 15px;
+  padding: 8rem 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -38,7 +53,7 @@
     line-height: 2.5rem;
   }
   
-  .text {
+  .sub-heading {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
