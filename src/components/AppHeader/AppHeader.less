@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.AppHeader {
+  height: @header-size !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: @gradient-bg !important;
+
+  .brand {
+    position: relative;
+    img {
+      height: 50%;
+    }
+  }
+
+  .ant-menu {
+    color: white;
+    font-family: @primary-font;
+    font-size: medium;
+    font-weight: 500;
+
+    margin-left: auto;
+    background: transparent;
+    border-bottom: none;
+    line-height: 45px !important;
+
+    .ant-menu-item-active,
+    .ant-menu-item:hover,
+    .ant-menu-item-selected  {
+      color: white !important;
+      border-bottom: 2px solid white !important;
+    }
+  }
+}

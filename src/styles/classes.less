@@ -1,0 +1,63 @@
+@import "./variables";
+
+.heading {
+  font-family: @primary-font;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.button {
+  height: auto !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px !important;
+
+  font-family: @primary-font;
+  font-weight: bold !important;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  padding: 2rem 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  
+  .text {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

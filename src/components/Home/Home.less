@@ -1,0 +1,61 @@
+@import "../../styles/variables.less";
+@import "../../styles/classes.less";
+
+.Home {
+  position: relative;
+  min-height: calc(100vh - @header-size);
+  background: @gradient-bg;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-top: 15vw solid transparent;
+    border-right: 100vw solid white;
+  }
+
+  .heading,
+  .text {
+    color: white;
+  }
+
+  .ant-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .ant-btn {
+      margin-top: 1.5rem;
+
+      &:first-of-type {
+        margin-right: 1rem;
+      }
+    }
+
+    .img-intro {
+      width: 100%;
+      height: auto;
+      margin: 2rem auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Home {
+    &::before{
+      content: "";
+      position: absolute;
+      left: 10%;
+      bottom: 0;
+  
+      width: 20vw;
+      height: 15vh;
+      background: @gradient-bg;
+      transform: skewY(-15deg);
+    }
+  }
+}
