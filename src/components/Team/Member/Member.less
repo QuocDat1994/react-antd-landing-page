@@ -1,0 +1,46 @@
+@import "../../../styles/main.less";
+
+.Member {
+  text-align: center;
+  border: @border;
+
+  .ant-card-body {
+    position: relative;
+
+    .Member__contact {
+      &:extend(.flex-center);
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      a {
+        &:extend(.flex-center);
+        width: 2rem;
+        height: 2rem;
+        background-color: white;
+        border-radius: 100%;
+        border: @border;
+        font-size: 1rem;
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+          background-color: @primary-color;
+          color: white;;  
+        }
+      }
+    }
+
+    .ant-card-meta-title {
+      font-family: @primary-font;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+
+    .ant-card-meta-description {
+      &:extend(.text);
+      font-size: 0.8rem;
+    }
+  }
+}

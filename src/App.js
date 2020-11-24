@@ -10,6 +10,7 @@ import { Pricing } from './components/Pricing/Pricing';
 import { Testimonial } from './components/Testimonial/Testimonial';
 
 import './App.less';
+import { Team } from './components/Team/Team';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Showcase />
         <Pricing />
         <Testimonial />
+        <Team />
       </Content>
       <Footer>Fotter</Footer>
     </Layout>
