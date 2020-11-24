@@ -1,0 +1,36 @@
+@import "../../../styles/main.less";
+
+.Post {
+  .ant-card-meta-title {
+    font-family: @primary-font;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .ant-card-meta-description {
+    font-family: @primary-font;
+    color: @font-color;
+  }
+
+  time {
+    color: @primary-color;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 1rem;
+  }
+
+  &__info {
+    &:extend(.flex-center);
+    justify-content: space-between;
+
+    font-family: @primary-font;
+    color: @font-color;
+    padding: 12px 24px;
+
+    i {
+      color: @primary-color;
+    }
+  }
+}

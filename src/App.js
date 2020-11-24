@@ -8,9 +8,10 @@ import { Services } from './components/Services/Services';
 import { Showcase } from './components/Showcase/Showcase';
 import { Pricing } from './components/Pricing/Pricing';
 import { Testimonial } from './components/Testimonial/Testimonial';
+import { Team } from './components/Team/Team';
+import { Blog } from './components/Blog/Blog';
 
 import './App.less';
-import { Team } from './components/Team/Team';
 
 function App() {
   return (
@@ -25,8 +26,9 @@ function App() {
         <Pricing />
         <Testimonial />
         <Team />
+        <Blog />
       </Content>
-      <Footer>Fotter</Footer>
+      <Footer>Footer</Footer>
     </Layout>
   );
 }
