@@ -1,5 +1,6 @@
 import { Card } from 'antd';
 import React from 'react'
+import { SectionHeading } from '../Common/SectionHeading/SectionHeading';
 import "./Services.less";
 
 export const Services = () => {
@@ -7,13 +8,7 @@ export const Services = () => {
 
   return (
     <section id="services" className="Services">
-      <h1 className="heading">Services We Provide</h1>
-      <p className="sub-heading">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit
-        <br className="break-point" />
-        sed do eiusmod tempor incididunt ut labore et dolore.
-      </p>
-
+      <SectionHeading heading="Services We Provide" />
       <Card>
         <Grid>
           <i className="fas fa-mug-hot"></i>

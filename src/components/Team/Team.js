@@ -8,6 +8,7 @@ import member3 from '../../assets/team/member3.jpg';
 import member4 from '../../assets/team/member4.jpg';
 
 import "./Team.less"
+import { SectionHeading } from '../Common/SectionHeading/SectionHeading';
 
 export const Team = () => {
   const memberList = [
@@ -47,16 +48,11 @@ export const Team = () => {
 
   return (
     <section id="team" className="Team">
-      <h1 className="heading">Team Members</h1>
-      <p className="sub-heading">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit
-        <br className="break-point" />
-        sed do eiusmod tempor incididunt ut labore et dolore.
-      </p>
+      <SectionHeading heading="Team Members" />
       <Row gutter={[24, 24]} justify="center">
         {
           memberList.map(member => (
-            <Col xs={20} sm={12} md={8} lg={6}>
+            <Col xs={20} sm={12} md={8} lg={6} key={member.name + member.position}>
               <Member
                 name={member.name}
                 position={member.position}

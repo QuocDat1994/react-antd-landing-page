@@ -1,5 +1,6 @@
 import { Col, Row, Space } from 'antd';
 import React from 'react';
+import { SectionHeading } from '../Common/SectionHeading/SectionHeading';
 import "./Showcase.less"
 
 export const Showcase = () => {
@@ -44,12 +45,7 @@ export const Showcase = () => {
   return (
     <section id="showcase" className="Showcase">
       <div className="container">
-        <h1 className="heading">Recent Works</h1>
-        <p className="sub-heading">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit
-          <br className="break-point" />
-          sed do eiusmod tempor incididunt ut labore et dolore.
-        </p>
+        <SectionHeading heading="Recent Works" />
       </div>
       <div className="slider">
         <Row gutter={16}>

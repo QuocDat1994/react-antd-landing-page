@@ -2,16 +2,12 @@ import React from 'react';
 import { Row, Col, Card, Button } from 'antd';
 
 import "./Pricing.less"
+import { SectionHeading } from '../Common/SectionHeading/SectionHeading';
 
 export const Pricing = () => {
   return (
     <section id="pricing" className="Pricing">
-      <h1 className="heading">Pricing Plans</h1>
-      <p className="sub-heading">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit
-        <br className="break-point" />
-        sed do eiusmod tempor incididunt ut labore et dolore.
-      </p>
+      <SectionHeading heading="Pricing Plans" />
       <Row gutter={[24, 24]} justify="center">
         <Col xs={24} sm={20} md={12} lg={8}>
           <Card>

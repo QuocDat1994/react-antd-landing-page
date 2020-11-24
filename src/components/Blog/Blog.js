@@ -7,6 +7,7 @@ import post2 from '../../assets/blog/post2.jpg';
 import post3 from '../../assets/blog/post3.jpg';
 
 import "./Blog.less";
+import { SectionHeading } from '../Common/SectionHeading/SectionHeading';
 
 export const Blog = () => {
   const postList = [
@@ -45,16 +46,11 @@ export const Blog = () => {
   return (
     <section id="blog" className="Blog">
       <div className="container">
-        <h1 className="heading">Latest Blog Posts</h1>
-        <p className="sub-heading">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit
-          <br className="break-point" />
-          sed do eiusmod tempor incididunt ut labore et dolore.
-        </p>
+        <SectionHeading heading="Latest Blog Posts" />
         <Row gutter={[24, 24]} justify="center">
           {
-            postList.map(post => (
-              <Col xs={20} md={12} lg={8}>
+            postList.map((post, index) => (
+              <Col xs={20} md={12} lg={8} key={index + post.author}>
                 <Post
                   title={post.title}
                   description={post.description}
@@ -70,6 +66,6 @@ export const Blog = () => {
           }
         </Row>
       </div>
-    </section>
+    </section >
   )
 }

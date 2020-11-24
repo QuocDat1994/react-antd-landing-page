@@ -10,6 +10,7 @@ import { Pricing } from './components/Pricing/Pricing';
 import { Testimonial } from './components/Testimonial/Testimonial';
 import { Team } from './components/Team/Team';
 import { Blog } from './components/Blog/Blog';
+import { Contact } from './components/Contact/Contact';
 
 import './App.less';
 
@@ -27,6 +28,7 @@ function App() {
         <Testimonial />
         <Team />
         <Blog />
+        <Contact />
       </Content>
       <Footer>Footer</Footer>
     </Layout>
