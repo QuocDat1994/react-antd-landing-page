@@ -46,13 +46,13 @@ export const Testimonial = () => {
     <section id="testimonial" className="Testimonial">
       <div className="container">
         <div className="icon-wrapper" onClick={showModal}>
-          <i class="fas fa-play" />
+          <i className="fas fa-play" />
         </div>
       </div>
       <div className="container">
         <Carousel autoplay dotPosition="bottom">
           {reviewList.map(review => (
-            <div className="carousel__item">
+            <div key={review.name} className="carousel__item">
               <p className="review">
                 {review.review}
               </p>

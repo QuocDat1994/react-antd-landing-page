@@ -1,6 +1,8 @@
 @import "../../styles/main.less";
 
 .About {
+  &:extend(.container);
+
   .ant-card {
     &:extend(.card);
 
@@ -18,13 +20,5 @@
     p {
      &:extend(.text);
     }
-  }
-
-  .container:nth-child(2) {
-    padding-top: 0;
-  }
-
-  .img-about {
-    width: 100%;
   }
 }
