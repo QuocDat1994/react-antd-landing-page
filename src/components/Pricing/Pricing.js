@@ -6,10 +6,10 @@ import "./Pricing.less"
 export const Pricing = () => {
   return (
     <section id="pricing" className="Pricing">
-      <h1>Pricing Plans</h1>
-      <p>
+      <h1 className="heading">Pricing Plans</h1>
+      <p className="sub-heading">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit
-        <br />
+        <br className="break-point" />
         sed do eiusmod tempor incididunt ut labore et dolore.
       </p>
       <Row gutter={[24, 24]} justify="center">

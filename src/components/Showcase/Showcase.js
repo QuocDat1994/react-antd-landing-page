@@ -44,10 +44,10 @@ export const Showcase = () => {
   return (
     <section id="showcase" className="Showcase">
       <div className="container">
-        <h1>Recent Works</h1>
-        <p>
+        <h1 className="heading">Recent Works</h1>
+        <p className="sub-heading">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit
-          <br />
+          <br className="break-point" />
           sed do eiusmod tempor incididunt ut labore et dolore.
         </p>
       </div>

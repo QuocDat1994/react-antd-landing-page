@@ -47,10 +47,10 @@ export const Team = () => {
 
   return (
     <section id="team" className="Team">
-      <h1 className="heading--section">Team Members</h1>
-      <p className="sub-heading--section">
+      <h1 className="heading">Team Members</h1>
+      <p className="sub-heading">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit
-        <br className="br--section" />
+        <br className="break-point" />
         sed do eiusmod tempor incididunt ut labore et dolore.
       </p>
       <Row gutter={[24, 24]} justify="center">

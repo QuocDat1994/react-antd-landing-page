@@ -10,11 +10,6 @@
   font-family: @primary-font;
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
-}
-
-.heading--section {
-  &:extend(.heading);
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -23,15 +18,11 @@
   font-family: @primary-font;
   font-size: 1.2rem;
   color: @font-color;
-}
-
-.sub-heading--section {
-  &:extend(.sub-heading);
   margin-bottom: 3rem;
   text-align: center;
 }
 
-.br--section {
+.break-point {
   display: none;
 }
 
@@ -103,7 +94,7 @@
     max-width: 720px;
   }
 
-  .br--section {
+  .break-point {
     display: initial;
   }
 }

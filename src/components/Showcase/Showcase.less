@@ -2,26 +2,17 @@
 
 .Showcase {
   overflow: hidden;
-
+  
   .container {
     max-width: 100vw;
     background: @gradient-bg;
     margin-left: 0;
     margin-right: 0;
+  }
 
-    h1 {
-      &:extend(.heading--section);
-      color: white;
-    }
-
-    & > p {
-      &:extend(.sub-heading--section);
-      color: white;
-    }
-
-    br {
-      &:extend(.br--section);
-    }
+  .heading,
+  .sub-heading {
+    color: white;
   }
 
   .slider {

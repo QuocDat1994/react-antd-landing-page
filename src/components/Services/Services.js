@@ -7,10 +7,10 @@ export const Services = () => {
 
   return (
     <section id="services" className="Services">
-      <h1>Services We Provide</h1>
-      <p>
+      <h1 className="heading">Services We Provide</h1>
+      <p className="sub-heading">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit
-        <br />
+        <br className="break-point" />
         sed do eiusmod tempor incididunt ut labore et dolore.
       </p>
 
