@@ -1,0 +1,34 @@
+@import "../../../styles/main.less";
+
+.about__card {
+  .card();
+  padding: 1rem !important;
+
+
+  &:hover {
+    border: 1px solid @primary-color !important;
+  }
+
+  .ant-card-cover {
+    padding-top: 2rem;
+
+    .about__card-icon {
+      border: none;
+    }
+  }
+
+  .ant-card-body {
+    padding: 2rem 1rem;
+
+    .ant-card-meta-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .ant-card-meta-description {
+      .text();
+      font-size: 1rem;
+      margin-bottom: 1em;
+    }
+  }
+}

@@ -1,11 +1,5 @@
 @import "./variables";
 
-.text {
-  font-family: @primary-font;
-  font-size: 1rem;
-  color: @font-color;
-}
-
 .button {
   height: auto !important;
   padding: 1rem 2rem !important;
@@ -22,32 +16,3 @@
   }
 }
 
-.icon {
-  .flex-center();
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  background-color: lighten(@primary-color, 35%);
-
-  font-size: 2.5rem;
-  color: @primary-color;
-}
-
-.card {
-  padding: 2rem 0.5rem;
-  text-align: center;
-  border: 1px solid lighten(black, 80%);
-  transition: 0.5s all ease-in-out;
-}
-
-@media only screen and (min-width: 576px) {
-  .heading {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  
-  .sub-heading {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-  }
-}
