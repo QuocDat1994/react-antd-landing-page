@@ -1,13 +1,12 @@
 @import "../../styles/main.less";
 
-.Home {
+.home {
   position: relative;
-  // min-height: calc(90vh - @header-size);
   background: @gradient-bg;
   overflow: hidden;
   display: flex;
   align-items: center;
-
+  
   &::after {
     content: "";
     position: absolute;
@@ -17,28 +16,38 @@
     pointer-events: none;
   }
 
-  .container {
+  .home__container {
     padding-top: 5rem;
-    
-    .heading,
-    .sub-heading {
-      color: white;
-      text-align: left;
-    }
 
-    .ant-col {
+    .home__intro {
       display: flex;
       flex-direction: column;
       justify-content: center;
 
-      .ant-btn {
-        margin-top: 1.5rem;
+      .intro__heading {
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+  
+      .intro__sub-heading {
+        color: white;
+        font-size: 1.2rem;
       }
 
-      .img-intro {
+      .intro__button-group {
+        margin-top: 1.5rem;
+      }
+    }
+
+    .home__img-wrapper {
+      .flex-center();
+
+      .home__img {
         width: 100%;
         height: auto;
-        margin: 2rem auto;
+        margin: 2.5rem auto 2rem auto;
         z-index: 2;
       }
     }
@@ -47,7 +56,7 @@
 
 
 @media only screen and (min-width: 1200px) {
-  .Home {
+  .home {
     &::before{
       content: "";
       position: absolute;

@@ -47,7 +47,7 @@ export const Contact = () => {
               <Row gutter={24}>
                 <Col span={24}>
                   <Item >
-                    <TextArea placeholder="Write Message" />
+                    <TextArea rows={5} placeholder="Write Message" />
                   </Item>
                 </Col>
               </Row>

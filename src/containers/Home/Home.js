@@ -1,39 +1,49 @@
 import React from 'react'
 import { Row, Col, Button, Space } from 'antd';
 import "./Home.less";
+import { Container } from '../../components/Container/Container';
+import { AppButton } from '../../components/AppButton/AppButton';
+
+import img from '../../assets/home/intro.png'
 
 export const Home = () => {
   return (
-    <section id="home" className="Home">
-      <div className="container">
+    <section id="home" className="home">
+      <Container className="home__container">
         <Row>
-          <Col xs={24} md={12}>
-            <h1 className="heading">Handcrafted Web Template For Business and Startups</h1>
-            <p className="sub-heading">
+          <Col xs={24} md={12} className="home__intro">
+            <h1 className="intro__heading">
+              A fully responsive Landing Page with React & Ant Design
+            </h1>
+            <p className="intro__sub-heading">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
               dolores ea fugiat nesciunt quisquam.
             </p>
-            <Space size={"large"}>
-              <Button type="primary" className="button">
-                <a href="#local">
+            <Space size={"large"} className="intro__button-group">
+              <AppButton type="primary">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/QuocDat1994?tab=repositories">
                   Download
                 </a>
-              </Button>
-              <Button type="default" className="button">
-                <a href="#local">
+              </AppButton>
+              <AppButton>
+                <a href="#contact">
                   Contact US
                 </a>
-              </Button>
+              </AppButton>
             </Space >
           </Col>
-          <Col xs={24} md={12}>
+          <Col xs={24} md={12} className="home__img-wrapper">
             <img
-              className="img-intro"
-              src="https://preview.uideck.com/items/slick/business/img/intro.png"
-              alt="intro" />
+              className="home__img"
+              src={img}
+              alt={img}
+            />
           </Col>
         </Row>
-      </div>
+      </Container>
     </section >
   )
 }
