@@ -6,9 +6,9 @@ export const SectionHeading = (props) => {
   const { heading, subHeading = defaultSubHeading } = props;
 
   return (
-    <div className="SectionHeading">
-      <h1>{heading}</h1>
-      <p>
+    <div className="section-heading">
+      <h1 className="section-heading__main">{heading}</h1>
+      <p className="section-heading__sub">
         {subHeading}
       </p>
     </div>

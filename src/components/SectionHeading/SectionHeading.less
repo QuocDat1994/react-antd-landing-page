@@ -1,14 +1,14 @@
 @import "../../styles/main.less";
 
-.SectionHeading {
-  &:extend(.flex-center);
+.section-heading {
+  .flex-center();
   flex-direction: column;
   
-  h1 {
-    &:extend(.heading);
+  .section-heading__main {
+    .heading();
   }
 
-  p {
-    &:extend(.sub-heading);
+  .section-heading__sub {
+    .sub-heading();
   }
 }
