@@ -1,9 +1,9 @@
 import React from 'react';
+import { Col, Input, Row } from 'antd';
 import { Footer } from 'antd/lib/layout/layout';
 import { RightOutlined } from '@ant-design/icons';
 
 import "./AppFooter.less";
-import { Col, Input, Row } from 'antd';
 
 export const AppFooter = () => {
   return (

@@ -2,12 +2,13 @@ import React from 'react';
 import { Col, Row } from 'antd';
 
 import { Post } from './Post/Post';
+import { SectionHeading } from '../../components/SectionHeading/SectionHeading';
+
 import post1 from '../../assets/blog/post1.jpg';
 import post2 from '../../assets/blog/post2.jpg';
 import post3 from '../../assets/blog/post3.jpg';
 
 import "./Blog.less";
-import { SectionHeading } from '../Common/SectionHeading/SectionHeading';
 
 export const Blog = () => {
   const postList = [

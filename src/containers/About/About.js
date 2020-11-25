@@ -1,6 +1,5 @@
 import React from 'react';
-import { Col, Row, Card, Button } from 'antd';
-
+import { Col, Row, Card } from 'antd';
 import "./About.less"
 
 export const About = () => {

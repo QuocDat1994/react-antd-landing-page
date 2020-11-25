@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col, Card, Button } from 'antd';
+import { SectionHeading } from '../../components/SectionHeading/SectionHeading';
 
 import "./Pricing.less"
-import { SectionHeading } from '../Common/SectionHeading/SectionHeading';
 
 export const Pricing = () => {
   return (

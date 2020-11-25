@@ -2,13 +2,14 @@ import React from 'react';
 import { Col, Row } from 'antd';
 
 import { Member } from './Member/Member';
+import { SectionHeading } from '../../components/SectionHeading/SectionHeading';
+
 import member1 from '../../assets/team/member1.jpg';
 import member2 from '../../assets/team/member2.jpg';
 import member3 from '../../assets/team/member3.jpg';
 import member4 from '../../assets/team/member4.jpg';
 
 import "./Team.less"
-import { SectionHeading } from '../Common/SectionHeading/SectionHeading';
 
 export const Team = () => {
   const memberList = [

@@ -1,6 +1,7 @@
+import React from 'react';
 import { Card } from 'antd';
-import React from 'react'
-import { SectionHeading } from '../Common/SectionHeading/SectionHeading';
+import { SectionHeading } from '../../components/SectionHeading/SectionHeading';
+
 import "./Services.less";
 
 export const Services = () => {

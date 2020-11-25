@@ -2,12 +2,11 @@ import React from 'react'
 import { Form, Col, Input, Row, Button } from 'antd'
 import TextArea from 'antd/lib/input/TextArea';
 
-import { SectionHeading } from '../Common/SectionHeading/SectionHeading';
+import { SectionHeading } from '../../components/SectionHeading/SectionHeading';
 
 import contact from "../../assets/contact/contact.png";
 
 import "./Contact.less";
-
 
 export const Contact = () => {
   const { Item } = Form;

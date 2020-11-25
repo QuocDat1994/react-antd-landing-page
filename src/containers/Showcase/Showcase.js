@@ -1,6 +1,7 @@
-import { Col, Row, Space } from 'antd';
 import React from 'react';
-import { SectionHeading } from '../Common/SectionHeading/SectionHeading';
+import { Col, Row, Space } from 'antd';
+import { SectionHeading } from '../../components/SectionHeading/SectionHeading';
+
 import "./Showcase.less"
 
 export const Showcase = () => {

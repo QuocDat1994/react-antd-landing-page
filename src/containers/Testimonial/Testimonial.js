@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
-
-import Modal from 'antd/lib/modal/Modal';
 import { Carousel } from 'antd';
+import Modal from 'antd/lib/modal/Modal';
 
 import person1 from '../../assets/testimonial/person1.jpg';
 import person2 from '../../assets/testimonial/person2.jpg';

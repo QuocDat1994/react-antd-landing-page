@@ -1,10 +1,8 @@
 import React from 'react';
 import { Header } from 'antd/lib/layout/layout';
-import { Affix, Space } from 'antd';
-import "./AppHeader.less"
-import { Menu } from 'antd';
+import { Affix, Menu } from 'antd';
 
-// import { AppMenu } from './AppMenu/AppMenu';
+import "./AppHeader.less"
 
 export const AppHeader = () => {
   const { Item } = Menu;
