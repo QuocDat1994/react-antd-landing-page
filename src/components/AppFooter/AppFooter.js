@@ -77,20 +77,20 @@ export const AppFooter = () => {
   return (
     <Footer className="app-footer">
       <Container className="app-footer__content">
-        <Row gutter={32}>
-          <Col span={6} className="app-footer__logo">
+        <Row gutter={[32, 24]}>
+          <Col xs={24} sm={12} lg={6} className="app-footer__logo">
             <img src={logo} alt={logo} />
           </Col>
-          <Col span={4}>
+          <Col xs={12} sm={12} lg={4}>
             <FooterMenu title="Company" menu={menuCompany} />
           </Col>
-          <Col span={4}>
+          <Col xs={12} sm={12} lg={4}>
             <FooterMenu title="Product" menu={menuProduct} />
           </Col>
-          <Col span={4}>
+          <Col xs={12} sm={12} lg={4}>
             <FooterMenu title="Download App" menu={menuDownload} />
           </Col>
-          <Col span={6}>
+          <Col xs={24} sm={24} lg={6}>
             <div className="app-footer__subscribe">
               <h2 className="app-footer__subscribe-title">Subscribe Now</h2>
               <p className="app-footer__subscribe-text">Appropriately implement calysts for change visa wireless catalysts for change.</p>
