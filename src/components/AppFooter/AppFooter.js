@@ -3,62 +3,107 @@ import { Col, Input, Row } from 'antd';
 import { Footer } from 'antd/lib/layout/layout';
 import { RightOutlined } from '@ant-design/icons';
 
+import { Container } from "../Container/Container";
+import { FooterMenu } from "./FooterMenu/FooterMenu";
+
+import logo from "../../assets/footer/footer-logo.png";
+
 import "./AppFooter.less";
 
 export const AppFooter = () => {
+  const menuCompany = [
+    {
+      url: "url",
+      text: "About Us"
+    },
+    {
+      url: "url",
+      text: "Career"
+    },
+    {
+      url: "url",
+      text: "Blog"
+    },
+    {
+      url: "url",
+      text: "Press"
+    },
+  ]
+  const menuProduct = [
+    {
+      url: "url",
+      text: "Customer Service"
+    },
+    {
+      url: "url",
+      text: "Enterprise"
+    },
+    {
+      url: "url",
+      text: "Price"
+    },
+    {
+      url: "url",
+      text: "Security"
+    },
+    {
+      url: "url",
+      text: "Why SLICK?"
+    },
+  ]
+  const menuDownload = [
+    {
+      url: "url",
+      text: "Android App"
+    },
+    {
+      url: "url",
+      text: "IOS App"
+    },
+    {
+      url: "url",
+      text: "Windows App"
+    },
+    {
+      url: "url",
+      text: "Play Store"
+    },
+    {
+      url: "url",
+      text: "IOS Store"
+    },
+  ]
+
   return (
-    <Footer className="AppFooter">
-      <div className="container">
+    <Footer className="app-footer">
+      <Container className="app-footer__content">
         <Row gutter={32}>
-          <Col span={6} className="AppFooter__logo">
-            <img src="https://preview.uideck.com/items/slick/business/img/footer-logo.png" />
+          <Col span={6} className="app-footer__logo">
+            <img src={logo} alt={logo} />
           </Col>
           <Col span={4}>
-            <div className="AppFooter__list">
-              <h2>Company</h2>
-              <ul>
-                <li><a href="#url">- About Us</a></li>
-                <li><a href="#url">- Career</a></li>
-                <li><a href="#url">- Blog</a></li>
-                <li><a href="#url">- Press</a></li>
-              </ul>
-            </div>
+            <FooterMenu title="Company" menu={menuCompany} />
           </Col>
           <Col span={4}>
-            <div className="AppFooter__list">
-              <h2>Product</h2>
-              <ul>
-                <li><a href="#url">- Customer Service</a></li>
-                <li><a href="#url">- Enterprise</a></li>
-                <li><a href="#url">- Price</a></li>
-                <li><a href="#url">- Security</a></li>
-                <li><a href="#url">- Why SLICK?</a></li>
-              </ul>
-            </div>
+            <FooterMenu title="Product" menu={menuProduct} />
           </Col>
           <Col span={4}>
-            <div className="AppFooter__list">
-              <h2>Download App</h2>
-              <ul>
-                <li><a href="#url">- Android App</a></li>
-                <li><a href="#url">- IOS App</a></li>
-                <li><a href="#url">- Price</a></li>
-                <li><a href="#url">- Windows App</a></li>
-                <li><a href="#url">- Play Store</a></li>
-                <li><a href="#url">- IOS Store</a></li>
-              </ul>
-            </div>
+            <FooterMenu title="Download App" menu={menuDownload} />
           </Col>
           <Col span={6}>
-            <div className="AppFooter__list">
-              <h2>Subscribe Now</h2>
-              <p>Appropriately implement calysts for change visa wireless catalysts for change.</p>
-              <Input addonAfter={<RightOutlined />} defaultValue="Email" />
+            <div className="app-footer__subscribe">
+              <h2 className="app-footer__subscribe-title">Subscribe Now</h2>
+              <p className="app-footer__subscribe-text">Appropriately implement calysts for change visa wireless catalysts for change.</p>
+              <Input
+                className="app-footer__subscribe-input"
+                addonAfter={<RightOutlined />}
+                placeholder="Email"
+              />
             </div>
           </Col>
         </Row>
-      </div>
-      <div className="AppFooter__copyright">
+      </Container>
+      <Container fluid className="app-footer__copyright">
         <span>
           Original Theme by
           <a href="https://uideck.com/templates/slick-free-bootstrap-template/"> Slick </a>
@@ -68,7 +113,7 @@ export const AppFooter = () => {
           Recreated by
           <a href="https://www.linkedin.com/in/dattruongnq/"> QuocDat </a>
         </span>
-      </div>
+      </Container>
     </Footer>
   )
 }

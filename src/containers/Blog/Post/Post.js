@@ -1,6 +1,5 @@
 import { Card } from 'antd'
 import React from 'react';
-
 import "./Post.less";
 
 export const Post = (props) => {
