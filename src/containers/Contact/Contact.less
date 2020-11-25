@@ -1,10 +1,11 @@
 @import "../../styles/main.less";
 
-.Contact {
-  .ant-form {
-    input, textarea {
-      font-family: @primary-font;
+.contact {
+  .contact__form {
+    input.ant-input, 
+    textarea.ant-input {
       padding: 1rem 1.5rem;
+      border-radius: 4px;
 
       &:focus {
         background-color: fade(@primary-color, 5%); 
@@ -12,7 +13,7 @@
     }
   }
 
-  .img-contact {
+  .contact__img {
     .flex-center();
   }
 }

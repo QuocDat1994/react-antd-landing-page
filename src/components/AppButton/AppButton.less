@@ -1,8 +1,9 @@
 @import "../../styles/main.less";
 
 .app-button {
+  width: 8rem !important;
   height: auto !important;
-  padding: 0.8rem 2rem !important;
+  padding: 0.6rem 0 !important;
   border-radius: 4px !important;
 
   font-weight: bold !important;
@@ -12,5 +13,12 @@
 
   &:hover {
     transform: scale(1.05);
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .app-button {
+    width: 10rem !important;
+    padding: 0.8rem 0 !important;
   }
 }

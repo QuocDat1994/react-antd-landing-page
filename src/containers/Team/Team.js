@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Row } from 'antd';
 
 import { Member } from './Member/Member';
+import { Container } from '../../components/Container/Container';
 import { SectionHeading } from '../../components/SectionHeading/SectionHeading';
 
 import member1 from '../../assets/team/member1.jpg';
@@ -19,7 +20,7 @@ export const Team = () => {
       img: member1,
       facebook: "#facebook",
       twitter: "#twitter",
-      linkedin: "#linkedin"
+      linkedin: "https://www.linkedin.com/in/dattruongnq/"
     },
     {
       name: "Celina D Cruze",
@@ -27,7 +28,7 @@ export const Team = () => {
       img: member2,
       facebook: "#facebook",
       twitter: "#twitter",
-      linkedin: "#linkedin"
+      linkedin: "https://www.linkedin.com/in/dattruongnq/"
     },
     {
       name: "Daryl Dixon",
@@ -35,7 +36,7 @@ export const Team = () => {
       img: member3,
       facebook: "#facebook",
       twitter: "#twitter",
-      linkedin: "#linkedin"
+      linkedin: "https://www.linkedin.com/in/dattruongnq/"
     },
     {
       name: "Mark Parker",
@@ -43,29 +44,31 @@ export const Team = () => {
       img: member4,
       facebook: "#facebook",
       twitter: "#twitter",
-      linkedin: "#linkedin"
+      linkedin: "https://www.linkedin.com/in/dattruongnq/"
     },
   ]
 
   return (
-    <section id="team" className="Team">
-      <SectionHeading heading="Team Members" />
-      <Row gutter={[24, 24]} justify="center">
-        {
-          memberList.map(member => (
-            <Col xs={20} sm={12} md={8} lg={6} key={member.name + member.position}>
-              <Member
-                name={member.name}
-                position={member.position}
-                img={member.img}
-                facebook={member.facebook}
-                twitter={member.twitter}
-                linkedin={member.linkedin}
-              />
-            </Col>
-          ))
-        }
-      </Row>
+    <section id="team" className="team">
+      <Container>
+        <SectionHeading heading="Team Members" />
+        <Row gutter={[24, 24]} justify="center">
+          {
+            memberList.map(member => (
+              <Col xs={20} sm={12} md={8} lg={6} key={member.name + member.position}>
+                <Member
+                  name={member.name}
+                  position={member.position}
+                  img={member.img}
+                  facebook={member.facebook}
+                  twitter={member.twitter}
+                  linkedin={member.linkedin}
+                />
+              </Col>
+            ))
+          }
+        </Row>
+      </Container>
     </section>
   )
 }

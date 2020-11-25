@@ -1,28 +1,26 @@
 @import "../../../styles/main.less";
 
-.Member {
-  text-align: center;
-  border: @border;
+.member {
+  .card();
 
   .ant-card-body {
     position: relative;
 
-    .Member__contact {
-      .flex-center();
+    .member__contact {
       position: absolute;
       top: -20%;
       left: 50%;
       transform: translateX(-50%);
 
-      a {
+      .member__contact-link {
         .flex-center();
         width: 2rem;
         height: 2rem;
-        background-color: white;
         border-radius: 100%;
         border: @border;
-        font-size: 1rem;
+        font-size: 1.2rem;
         transition: 0.3s all ease-in-out;
+        background-color: white;
 
         &:hover {
           background-color: @primary-color;
@@ -32,14 +30,10 @@
     }
 
     .ant-card-meta-title {
-      font-family: @primary-font;
-      font-weight: bold;
-      font-size: 1.2rem;
       margin-bottom: 0;
     }
 
     .ant-card-meta-description {
-      .text();
       font-size: 0.8rem;
     }
   }
