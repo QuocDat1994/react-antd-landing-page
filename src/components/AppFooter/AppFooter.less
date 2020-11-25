@@ -1,0 +1,79 @@
+@import "../../styles/main.less";
+
+@footer-color: #180E29;
+
+.AppFooter {
+  background-color: @footer-color !important;
+  color: white !important;
+  padding: 0;
+
+  .container {
+    padding-bottom: 5rem;
+  }
+
+  &__logo {
+    &:extend(.flex-center);
+    justify-content: flex-start;
+  }
+
+  &__list {
+    h2 {
+      color: white; 
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 1rem;
+        margin-top: 0.4rem;
+
+        a {
+          color: white;
+          font-family: @primary-font;
+          transition: 0.4s all ease-in-out;
+
+          &:hover {
+            padding-left: 1rem;
+            color: @primary-color;
+          }
+        }
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    input {
+      padding: 0.5rem;
+      color: white;
+      font-style: italic;
+      background-color: lighten(@footer-color, 10%);
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-right: 0;
+
+      &~.ant-input-group-addon {
+        color: white;
+        border-color: @primary-color;
+        background-color: @primary-color;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+    }
+  }
+
+  &__copyright {
+    font-family: @primary-font;
+    font-size: 1.1rem;
+    text-align: center;
+
+    padding: 1.5rem 0;
+    border-top: 1px solid lighten(@footer-color, 20%);
+  }
+}

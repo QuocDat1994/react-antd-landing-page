@@ -1,4 +1,4 @@
-import Layout, { Content, Footer } from 'antd/lib/layout/layout';
+import Layout, { Content } from 'antd/lib/layout/layout';
 
 import { AppHeader } from './components/AppHeader/AppHeader';
 import { Home } from './components/Home/Home';
@@ -11,6 +11,7 @@ import { Testimonial } from './components/Testimonial/Testimonial';
 import { Team } from './components/Team/Team';
 import { Blog } from './components/Blog/Blog';
 import { Contact } from './components/Contact/Contact';
+import { AppFooter } from './components/AppFooter/AppFooter';
 
 import './App.less';
 
@@ -30,7 +31,7 @@ function App() {
         <Blog />
         <Contact />
       </Content>
-      <Footer>Footer</Footer>
+      <AppFooter />
     </Layout>
   );
 }
