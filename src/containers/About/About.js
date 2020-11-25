@@ -10,7 +10,7 @@ import "./About.less"
 export const About = () => {
   const description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolores ea fugiat nesciunt quisquam.'
   const IconFont = createFromIconfontCN({
-    scriptUrl: '//at.alicdn.com/t/font_2229651_yq6yvefwzj.js'
+    scriptUrl: '//at.alicdn.com/t/font_2229651_awfgn4o1jo8.js'
   });
 
   return (

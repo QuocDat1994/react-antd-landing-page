@@ -1,0 +1,25 @@
+@import "../../../styles/main.less";
+
+.service-card {
+  .card();
+  width: 100% !important;
+  border: 0 !important;
+  text-align: left;
+
+  &:hover {
+    .service-card__icon {
+      color: white !important;
+      background-color: @primary-color !important;
+    }
+  }
+
+  .service-card__icon {
+    transition: 0.5s all ease-in-out;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .service-card {
+    width: 50% !important;
+  }
+}

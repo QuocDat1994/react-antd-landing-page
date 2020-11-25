@@ -9,7 +9,7 @@ export const Member = (props) => {
   const { Meta } = Card;
 
   const IconFont = createFromIconfontCN({
-    scriptUrl: '//at.alicdn.com/t/font_2229651_yq6yvefwzj.js'
+    scriptUrl: '//at.alicdn.com/t/font_2229651_awfgn4o1jo8.js'
   });
 
   return (

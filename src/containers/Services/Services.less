@@ -1,49 +1,11 @@
 @import "../../styles/main.less";
 
-.Services {
-  &:extend(.container);
+.services {
+  background-color: #F9F9F9;
 
-  .ant-card-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
-    grid-template-rows: auto auto;
-
-    &:hover {
-      i {
-        color: white;
-        background-color: @primary-color;
-      }
-    }
-
-    i {
-      .icon();
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 2;
-      border: 1px solid @primary-color;
-      transition: 0.5s all ease-in-out;
-    }
-
-    h2 {
-      font-family: @primary-font;
-      font-weight: bold;
-      grid-column: 2 / span 1;
-      grid-row: 1 / span 1;
-    }
-
-    p {
-      .text();
-      grid-column: 2 / span 1;
-      grid-row: 2 / span 1;
-    }
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .Services {
-    .ant-card-grid {
-      width: 50%;
-      grid-column-gap: 1rem;
+  .services__content {
+    .ant-card-body {
+      padding: 0 !important;
     }
   }
 }

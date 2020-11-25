@@ -14,7 +14,6 @@ export const AboutCard = (props) => {
       cover={
         <AppIcon
           icon={icon}
-          size="large"
           className="about__card-icon"
         />
       }
