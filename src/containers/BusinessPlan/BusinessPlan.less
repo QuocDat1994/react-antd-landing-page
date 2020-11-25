@@ -1,13 +1,23 @@
 @import "../../styles/main.less";
 
-.BusinessPlan {
-  &:extend(.container);
+.business-plan {
+  .business-plan__container {
+    padding-top: 0;
+  }
 
-  .heading {
+  .business-plan__title {
+    .heading();
+    text-align: left;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .business-plan__desc {
+    .text();
     text-align: left;
   }
 
-  .img-about {
+  .business-plan__img {
     width: 100%;
   }
 }
