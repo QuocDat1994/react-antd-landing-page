@@ -3,10 +3,10 @@ import { Button } from 'antd';
 import "./AppButton.less";
 
 export const AppButton = (props) => {
-  const { type, children } = props;
+  const { type, className, children } = props;
 
   return (
-    <Button type={type} className="app-button">
+    <Button type={type} className={`app-button ${className}`}>
       {children}
     </Button>
   )

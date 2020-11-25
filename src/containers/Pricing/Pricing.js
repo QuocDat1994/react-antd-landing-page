@@ -1,60 +1,73 @@
 import React from 'react';
-import { Row, Col, Card, Button } from 'antd';
+import { Row, Col } from 'antd';
 import { SectionHeading } from '../../components/SectionHeading/SectionHeading';
+import { Container } from '../../components/Container/Container';
+import { PriceCard } from './PriceCard/PriceCard';
 
 import "./Pricing.less"
 
 export const Pricing = () => {
+  const priceList = [
+    {
+      title: "Free",
+      price: "00",
+      features: [
+        "Free Instalation",
+        "500MB Storage",
+        "Single User",
+        "5 GB Bandwith",
+        "Minimal Features",
+        "No Dashboard",
+      ],
+      buttonType: "default",
+    },
+    {
+      title: "Standard",
+      price: "19.99",
+      features: [
+        "Free Instalation",
+        "2 GB Storage",
+        "Up to 2 users",
+        "50 GB Bandwith",
+        "All Features",
+        "Sales Dashboard",
+      ],
+      buttonType: "primary",
+    },
+    {
+      title: "Business",
+      price: "29.99",
+      features: [
+        "Free Instalation",
+        "5 GB Storage",
+        "Up to 4 users",
+        "100 GB Bandwith",
+        "All Features",
+        "Sales Dashboard",
+      ],
+      buttonType: "default",
+    },
+  ]
+
   return (
-    <section id="pricing" className="Pricing">
-      <SectionHeading heading="Pricing Plans" />
-      <Row gutter={[24, 24]} justify="center">
-        <Col xs={24} sm={20} md={12} lg={8}>
-          <Card>
-            <h2>Free</h2>
-            <h3>
-              <sup>$ </sup>00
-            </h3>
-            <p>Free Instalation</p>
-            <p>500MB Storage</p>
-            <p>Single User</p>
-            <p>5 GB Bandwith</p>
-            <p>Minimal Features</p>
-            <p>No Dashboard</p>
-            <Button>Purchase</Button>
-          </Card>
-        </Col>
-        <Col xs={24} sm={20} md={12} lg={8}>
-          <Card>
-            <h2>Standard</h2>
-            <h3>
-              <sup>$ </sup>19.99
-            </h3>
-            <p>Free Instalation</p>
-            <p>2 GB Storage</p>
-            <p>Upto 2 users</p>
-            <p>50 GB Bandwith</p>
-            <p>All Features</p>
-            <p>Sales Dashboard</p>
-            <Button type="primary">Purchase</Button>
-          </Card>
-        </Col>
-        <Col xs={24} sm={20} md={12} lg={8}>
-          <Card>
-            <h2>Business</h2>
-            <h3>
-              <sup>$ </sup>29.99
-            </h3>
-            <p>Free Instalation</p>
-            <p>5 GB Storage</p>
-            <p>Upto 4 users</p>
-            <p>100 GB Bandwith</p>
-            <p>All Features</p>
-            <p>Sales Dashboard</p>
-            <Button>Purchase</Button>
-          </Card>
-        </Col>
-      </Row>
+    <section id="pricing" className="pricing">
+      <Container>
+        <SectionHeading heading="Pricing Plans" />
+        <Row gutter={[24, 24]} justify="center">
+          {
+            priceList.map(price => (
+              <Col xs={24} sm={20} md={12} lg={8} key={price.title}>
+                <PriceCard
+                  title={price.title}
+                  price={price.price}
+                  features={price.features}
+                  buttonType={price.buttonType}
+                />
+              </Col>
+            ))
+          }
+        </Row>
+      </Container>
     </section>
   )
 }

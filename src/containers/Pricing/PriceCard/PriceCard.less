@@ -1,0 +1,30 @@
+@import "../../../styles/main.less";
+
+.price-card {
+  .card();
+
+  &:hover { 
+    border: 1px solid @primary-color !important;
+  }
+
+  .price-card__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem auto;
+  }
+
+  .price-card__price {
+    color: @primary-color;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .price-card__feature {
+    .text();
+  }
+
+  .price-card__button {
+    margin: 1rem auto;
+  }
+}
