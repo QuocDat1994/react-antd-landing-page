@@ -1,18 +1,14 @@
 @import "../../../styles/main.less";
 
-.Post {
-  .ant-card-meta-title {
-    font-family: @primary-font;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
+.post {
+  .card();
+  text-align: left;
 
   .ant-card-meta-description {
-    font-family: @primary-font;
-    color: @font-color;
+    font-size: 0.9rem;
   }
 
-  time {
+  .post__time-read {
     color: @primary-color;
     font-size: 0.9rem;
     font-weight: bold;
@@ -21,16 +17,17 @@
     margin-top: 1rem;
   }
 
-  &__info {
+  .post__info {
     .flex-center();
     justify-content: space-between;
 
-    font-family: @primary-font;
     color: @font-color;
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;
 
-    i {
+    .anticon {
       color: @primary-color;
+      font-size: 1rem;
+      font-weight: bold;
     }
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Row } from 'antd';
 
 import { Post } from './Post/Post';
+import { Container } from '../../components/Container/Container'
 import { SectionHeading } from '../../components/SectionHeading/SectionHeading';
 
 import post1 from '../../assets/blog/post1.jpg';
@@ -15,7 +16,7 @@ export const Blog = () => {
     {
       title: "Lorem ipsum dolor sit amet",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
-      time: "4 min",
+      timeRead: "4 min",
       author: "David",
       publishedTime: "10 April, 2020",
       img: post1,
@@ -25,7 +26,7 @@ export const Blog = () => {
     {
       title: "Lorem ipsum dolor sit amet",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
-      time: "7 min",
+      timeRead: "7 min",
       author: "Admin",
       publishedTime: "10 April, 2020",
       img: post2,
@@ -35,7 +36,7 @@ export const Blog = () => {
     {
       title: "Lorem ipsum dolor sit amet",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
-      time: "5 min",
+      timeRead: "5 min",
       author: "QC",
       publishedTime: "10 April, 2020",
       img: post3,
@@ -45,8 +46,8 @@ export const Blog = () => {
   ]
 
   return (
-    <section id="blog" className="Blog">
-      <div className="container">
+    <section id="blog" className="blog">
+      <Container>
         <SectionHeading heading="Latest Blog Posts" />
         <Row gutter={[24, 24]} justify="center">
           {
@@ -55,7 +56,7 @@ export const Blog = () => {
                 <Post
                   title={post.title}
                   description={post.description}
-                  time={post.time}
+                  timeRead={post.timeRead}
                   author={post.author}
                   publishedTime={post.publishedTime}
                   img={post.img}
@@ -66,7 +67,7 @@ export const Blog = () => {
             ))
           }
         </Row>
-      </div>
+      </Container>
     </section >
   )
 }

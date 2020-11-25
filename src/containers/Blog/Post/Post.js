@@ -1,5 +1,7 @@
 import { Card } from 'antd'
 import React from 'react';
+import { UserOutlined, CalendarOutlined } from '@ant-design/icons';
+
 import "./Post.less";
 
 export const Post = (props) => {
@@ -7,7 +9,7 @@ export const Post = (props) => {
 
   const { title,
     description,
-    time,
+    timeRead,
     author,
     publishedTime,
     img,
@@ -18,24 +20,24 @@ export const Post = (props) => {
   return (
     <a href={url}>
       <Card
-        className="Post"
+        className="post"
         hoverable
         cover={<img alt={alt} src={img} />}
         actions={[
-          <div className="Post__info">
+          <div className="post__info">
             <div>
-              <i className="far fa-user" />
+              <UserOutlined />
               <span> Posted by {author}</span>
             </div>
             <div>
-              <i className="far fa-calendar-alt" />
+              <CalendarOutlined />
               <span> {publishedTime}</span>
             </div>
           </div>
         ]}
       >
         <Meta title={title} description={description} />
-        <time>{time} Read</time>
+        <time className="post__time-read">{timeRead} Read</time>
       </Card>
     </a>
   )
