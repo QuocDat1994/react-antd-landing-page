@@ -1,6 +1,7 @@
 import React from 'react';
-import { Header } from 'antd/lib/layout/layout';
 import { Affix, Menu } from 'antd';
+import { Header } from 'antd/lib/layout/layout';
+import { MenuOutlined } from '@ant-design/icons';
 import { Container } from '../Container/Container';
 
 import "./AppHeader.less"
@@ -23,7 +24,7 @@ export const AppHeader = () => {
             className="app-header__menu"
             mode={"horizontal"}
             defaultSelectedKeys={"home"}
-            overflowedIndicator={<i className="fas fa-bars app-header__menu-icon"></i>}
+            overflowedIndicator={<MenuOutlined className="app-header__menu-icon" />}
           >
             <Item key="home">
               <a className="app-header__menu-item" href="#home">Home</a>
