@@ -24,7 +24,7 @@ export const Home = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/QuocDat1994?tab=repositories">
+                  href="https://github.com/QuocDat1994/react-antd-landing-page">
                   Download
                 </a>
               </AppButton>
